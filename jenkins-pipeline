@@ -9,6 +9,7 @@ node{
  stage('2Test&Build'){
   sh "${mavenHome}/bin/mvn install"
 } 
+/*
 stage('3CodeQuality'){
   sh "${mavenHome}/bin/mvn sonar:sonar"
 }
@@ -27,4 +28,5 @@ stage('4UploadArtifacts'){
 regard,
 ola''', recipientProviders: [buildUser(), developers(), contributor()], subject: 'build status', to: 'ola.ebenezer07@gmail.com'  
 }
+*/
 }
