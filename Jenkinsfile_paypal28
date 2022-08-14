@@ -1,7 +1,7 @@
 node{
  def mavenHome = tool name: 'maven3.8.6'   
  stage('1cloneCode'){
-    sh "echo running a software build and deployment project for payPal"
+    sh "echo running a software build and deployment project for nike"
     git "https://github.com/sonarlove/maven-web-application"
  } 
  stage('2Test&Build'){
